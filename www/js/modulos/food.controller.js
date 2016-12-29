@@ -12,4 +12,3 @@ angular.module('food', []).controller('FoodCtr', function ($scope, $http) {
         console.log(response);
     });
 });
-

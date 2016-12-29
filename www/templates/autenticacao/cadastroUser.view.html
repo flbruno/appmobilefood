@@ -1,0 +1,18 @@
+<ion-view view-title="Cadastro User">
+    <ion-content>
+        <div class="cadastrar">
+            <label class="item item-input">
+                <input type="text" placeholder="Nome" ng-model="user.nameUser">
+            </label>
+
+            <label class="item item-input">
+                <input type="text" placeholder="Email" ng-model="user.emailUser">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Senha" ng-model="user.senhaUser">
+            </label>
+            
+            <button class="button button-block button-positive" ng-click="cadastrar()" >Cadastrar</button>
+        </div><br>
+    </ion-content>
+</ion-view>
