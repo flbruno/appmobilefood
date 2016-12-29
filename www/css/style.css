@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+
+.image-background-login {
+background: url('../img/ground-login.jpg') no-repeat center;
+}
+.login {
+    margin-top: 30%;
+    background-color: #ffffff;
+}   
+#novaConta{
+    margin-left: 20%;
+    font-size: 12px;
+}
+    
