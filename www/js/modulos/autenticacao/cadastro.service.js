@@ -15,24 +15,25 @@ angular.module('autenticacao').service('CadastroLoginService', [
                 console.log(response);
             });
         };
-        
-        
-        CadastroLoginService.salvarUsuario = function (usuario) {
+
+
+        CadastroLoginService.salvarUsuario = function (user) {
             var URL_BASE = "http://localhost:8088";
             $http({
                 method: 'POST',
                 url: URL_BASE + '/autenticacao/cadastro/usuario',
                 contentType: 'application/json; charset=utf-8',
-                data: {
-                     usuario: usuario
-                }
+                data: user
             }).then(function success(response) {
+                console.log(response);
+                alert(response);
+                go('login');
                 return response.data;
             }, function error(response) {
                 console.log(response);
             });
         };
-         return CadastroLoginService;
+        return CadastroLoginService;
     }]);
 
 

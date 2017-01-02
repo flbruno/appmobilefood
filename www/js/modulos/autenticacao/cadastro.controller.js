@@ -1,17 +1,14 @@
 angular.module('autenticacao').controller('CadastroLoginCtrl', function ($scope, $http, $state, CadastroLoginService) {
 
-    $scope.user =  {};
-    $scope.user.nameUser = "";
-    $scope.user.emailUser = "";
-    $scope.user.senhaUser = "";
+    $scope.usuario = {};
+    $scope.usuario.nameUser = "";
+    $scope.usuario.emailUser = "";
+    $scope.usuario.senhaUser = "";
 
-    // Perform the login action when the user submits the login form
+    //Cadastrando o usuario no sistema
     $scope.cadastrar = function () {
-        CadastroLoginService.salvarUsuario($scope.user);
-        //$state.go('app.playlists');
+        CadastroLoginService.salvarUsuario($scope.usuario);
     };
-
-   
 });
 
 
